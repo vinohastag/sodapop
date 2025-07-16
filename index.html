@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lyrics</title>
+    <style>
+      body {background-color: black;
+      text-align: center;
+        margin: 10%;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 30px; 
+      }
+      h1 {cursor: pointer;}
+      
+      button {font-size: 20px;
+         padding: 30px 40px;
+         margin-top: 30px;
+         border-radius: 10px;
+         background-color: white;
+         color: black;
+         border: none;
+         cursor: pointer;}
+         
+         #bg-video {
+           position: fixed;
+           top: 0;
+           left: 0;
+           min-width: 100%;
+           min-height: 100%;
+           z-index:-1;
+           object-fit: cover;   
+           }
+           
+           
+      </style>
+  </head>
+  
+  <body>
+    
+    <video loop muted playsinline
+    id="bg-video">
+      <source src="soda_pop/soda_pop.mp4"
+      type="video/mp4">
+      your browser does not support the video tag.
+      </video>
+      
+              <audio id="Soda_Pop" loop>
+           <source src="music/soda_pop.mp3" type="audio/mpeg">
+           Your browser does not support the audio element.          </audio>
+           
+           <button onclick="playMedia()">Tap to play the song</button>
+
+<h1> SODA POP </h1>
+
+<h2> By: Kpop Demon Hunters</h2>
+
+
+<p> Don't want you, need you
+Yeah,<br> I need you to fill me up
+</p>
+
+<p>
+Masigo masyeo bwado
+Seonge chaji ana
+</p>
+
+<p>
+Got a feeling that, oh, yeah (Yeah)
+You could be everything that
+That I need, taste so sweet (Yeah, yeah)
+Every sip makes me want more, yeah! </p>
+
+<p>Lookin' like snacks 'cause you got it like that (Woo)
+Take a big bite, want another bite, yeah</p>
+
+<p>Neoui modeun geol nan wonhae, wonhae, wonhae
+Neo malgon modu pyeonhae, pyeonhae, pyeonhae</p>
+
+<p>When you're in my arms, I hold you so tight (So tight)
+Can't let go, no, no, not tonight</p>
+
+<p>Jigeum dangjang nal bwa sigan eopjana
+Neon naekkeoya imi algo itjana</p>
+
+<p>'Cause I need you to need me
+I'm empty, you feed me, so, refreshing
+My little soda pop😜
+</p>
+
+<p> You're all I can think of<br>
+Every drop I drink up
+<br>You're my soda pop
+<br>My little soda pop, 
+cool me down<br> you're so hot
+pour me up, <br>I won't stop<br>
+You're my soda pop<br>
+My little soda pop😜</p>
+
+<p>Make me wanna flip the top
+Han mogeume you hit the spot<br>
+Every little drip and drop, fizz and pop, ah
+Soreum doda it's gettin' hot
+Yes,<br> I'm sippin' when it's drippin' now
+It's done?<br> I need a second round
+And pour a lot and don't you stop
+Til my soda pop fizzles out</p>
+
+<p>Kkum soge geuryeowatdeon neo
+Nan<br> jeoldae nochil su eopseo
+Neol wonhae kkok</p>
+
+<p>I waited so long for a taste of soda
+So, the wait is over, baby
+Come and fill me up
+Just can't get enough
+Oh</p>
+
+<p>You're all I can think of
+Every drop I drink up
+You're my soda pop
+My little soda pop (Yeah, yeah)</p>
+<p>
+Cool me down, you're so hot
+Pour me up, I won't stop (Oh, oh)
+You're my soda pop
+My little soda pop
+</p>
+
+<p>Ooh, ooh
+Ooh, ooh<br>
+You're my soda pop
+Gotta drink every drop</p>
+
+
+<script>
+  function playMedia() {
+    const video = document.getElementById('bg-video');
+    const audio = document.getElementById('Soda_Pop');
+
+    // Optional: show the video only if it's hidden
+    video.style.display = "block";
+
+    // Try to play both media files, catch errors if browser blocks
+    video.play().catch(err => console.error("Video error:", err));
+    audio.play().catch(err => console.error("Audio error:", err));
+  }
+
+</script>
+</body>
+</html>
